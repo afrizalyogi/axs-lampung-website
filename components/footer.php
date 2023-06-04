@@ -10,13 +10,13 @@
       <li class="list-inline-item me-4">
         <a href="showcase.php">Showcase</a>
       </li>
-      <li class="list-inline-item">
+      <li class="list-inline-item me-4">
         <a href="galeri.php">Galeri</a>
       </li>
-      <li class="list-inline-item">
+      <li class="list-inline-item me-4">
         <a href="event.php">Event</a>
       </li>
-      <li class="list-inline-item">
+      <li class="list-inline-item me-4">
         <a href="tentang.php">Tentang</a>
       </li>
     </ul>
