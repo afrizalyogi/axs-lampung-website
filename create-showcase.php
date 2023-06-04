@@ -47,7 +47,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 					$link_target = "#";
 
 					// Query untuk memasukkan data showcase ke dalam tabel showcase
-					$query = "INSERT INTO showcase (image_url, title, owner, description) VALUES ('$image_url', '$title', '$owner', '$description')";
+					$query = "INSERT INTO showcase (image_url, title, owner, description, link_target) VALUES ('$image_url', '$title', '$owner', '$description', '$link_target')";
 					$result = mysqli_query($conn, $query);
 
 					// Periksa apakah query berhasil dieksekusi

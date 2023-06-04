@@ -1,11 +1,13 @@
-<?
+<?php
+	session_start();
 	include 'db_connect.php';
+
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$no_telp = $_POST['no_telp'];
 		$password = $_POST['password'];
 
 		$sql = "SELECT * FROM akun WHERE no_telp = '$no_telp' AND password = '$password'";
-    $result = mysqli_query($conn, $sql);
+		$result = mysqli_query($conn, $sql);
 
 		if ($result && mysqli_num_rows($result) > 0) {
 			$query = "SELECT nama FROM akun WHERE no_telp = '$no_telp'";
@@ -17,7 +19,6 @@
 				$nama = $row['nama'];
 			}
 			
-			session_start();
 			$_SESSION['logged_in'] = true;
 			$_SESSION['no_telp'] = $no_telp;
 			$_SESSION['nama'] = $nama;
@@ -27,14 +28,13 @@
 			exit;
 		} 
 		else {
-			echo '<div class="alert alert-danger mt-3">Username atau password salah</div>';
+			$error_message = 'Username atau password salah';
 		}
 	}
 
 	// Tutup koneksi
 	mysqli_close($conn);
 ?>
-
 <!DOCTYPE html>
 <html lang="id">
 	<head>
@@ -55,6 +55,9 @@
 						<div class="col-md-8 col-xl-6 text-center mx-auto">
 							<h2>Log in</h2>
 							<p>Selamat datang kembali anggota AXS Lampung!</p>
+							<?php if (isset($error_message)): ?>
+                <div class="alert alert-danger mt-3"><?php echo $error_message; ?></div>
+              <?php endif; ?>
 						</div>
 					</div>
 					<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="container text-center">
