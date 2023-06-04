@@ -1,0 +1,17 @@
+@import "main";
+
+#form {
+	color: $white-secondary;
+}
+
+.left {
+	background-color: $dark-red;
+}
+
+.right {
+	display: flex;
+	background-color: $black;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+}

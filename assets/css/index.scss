@@ -1,0 +1,17 @@
+@import "main";
+
+#hero {
+	background-color: $dark-red;
+}
+
+#tentang,
+#tim,
+#event {
+	background-color: $black;
+	color: $white;
+}
+
+#partner {
+	background-color: $dark-red;
+	color: $white-secondary;
+}

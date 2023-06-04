@@ -1,0 +1,22 @@
+[
+	{
+		"image": "https://cdn.example.com/team1.jpg",
+		"name": "Team 1",
+		"title": "Title 1"
+	},
+	{
+		"image": "https://cdn.example.com/team2.jpg",
+		"name": "Team 2",
+		"title": "Title 2"
+	},
+	{
+		"image": "https://cdn.example.com/team3.jpg",
+		"name": "Team 3",
+		"title": "Title 3"
+	},
+	{
+		"image": "https://cdn.example.com/team4.jpg",
+		"name": "Team 4",
+		"title": "Title 4"
+	}
+]

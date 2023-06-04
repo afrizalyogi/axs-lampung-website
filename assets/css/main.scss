@@ -1,0 +1,90 @@
+$dark-red: #b31d16;
+$gold: #ffdb01;
+$white: #fafafa;
+$white-secondary: #dadada;
+$black: #1f1f1f;
+$black-secondary: #555555;
+
+#body {
+	font-family: "Montserrat", sans-serif;
+	color: $white-secondary;
+}
+
+section,
+footer {
+	padding: 48px 0;
+}
+
+footer {
+	background-color: $dark-red;
+	color: $white-secondary;
+}
+
+nav {
+	background-color: $dark-red;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: $white;
+}
+
+p {
+	color: $white-secondary;
+}
+
+a {
+	color: $white-secondary;
+	text-decoration: none;
+}
+
+img {
+	object-fit: cover;
+}
+
+hr {
+	border: 2px solid $white;
+	opacity: 75%;
+	width: 64px;
+}
+
+.btn {
+	font-size: 16px;
+}
+
+.btn-primary {
+	display: inline-block;
+	border: none;
+	padding: 12px 24px;
+	background-color: $gold;
+	color: $black;
+	border-radius: 12px;
+}
+
+.btn-primary:hover {
+	background-color: darken($gold, 12%);
+}
+
+.btn-outline {
+	display: inline-block;
+	border: 2px solid $gold;
+	background-color: none;
+	color: $gold;
+	border-radius: 12px;
+}
+
+.btn-outline:hover {
+	background-color: $gold;
+}
+
+.nav-item {
+	.nav-link {
+		color: $white-secondary;
+		margin-right: 12px;
+	}
+	.nav-link.active {
+		color: $gold;
+	}
+}
