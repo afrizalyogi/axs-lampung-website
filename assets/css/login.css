@@ -73,6 +73,10 @@ hr {
   background-color: #ffdb01;
 }
 
+.navbar-brand img {
+  height: 36px;
+}
+
 .nav-item .nav-link {
   color: #dadada;
   margin-right: 12px;

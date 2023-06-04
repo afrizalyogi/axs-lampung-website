@@ -1,22 +1,22 @@
 [
 	{
 		"image": "https://cdn.bootstrapstudio.io/placeholders/1400x800.png",
-		"name": "Team 1",
-		"title": "Title 1"
+		"title": "Activity 1",
+		"link": "#"
 	},
 	{
 		"image": "https://cdn.bootstrapstudio.io/placeholders/1400x800.png",
-		"name": "Team 2",
-		"title": "Title 2"
+		"title": "Activity 2",
+		"link": "#"
 	},
 	{
 		"image": "https://cdn.bootstrapstudio.io/placeholders/1400x800.png",
-		"name": "Team 3",
-		"title": "Title 3"
+		"title": "Activity 3",
+		"link": "#"
 	},
 	{
 		"image": "https://cdn.bootstrapstudio.io/placeholders/1400x800.png",
-		"name": "Team 4",
-		"title": "Title 4"
+		"title": "Activity 4",
+		"link": "#"
 	}
 ]

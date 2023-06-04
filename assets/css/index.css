@@ -24,6 +24,10 @@ h4 {
   color: #fafafa;
 }
 
+p {
+  color: #dadada;
+}
+
 a {
   color: #dadada;
   text-decoration: none;
@@ -67,6 +71,10 @@ hr {
 
 .btn-outline:hover {
   background-color: #ffdb01;
+}
+
+.navbar-brand img {
+  height: 36px;
 }
 
 .nav-item .nav-link {

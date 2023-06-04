@@ -79,6 +79,12 @@ hr {
 	background-color: $gold;
 }
 
+.navbar-brand {
+	img {
+		height: 36px;
+	}
+}
+
 .nav-item {
 	.nav-link {
 		color: $white-secondary;

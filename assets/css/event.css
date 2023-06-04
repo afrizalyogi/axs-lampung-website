@@ -83,4 +83,8 @@ hr {
 }
 .nav-item .nav-link.active {
   color: #ffdb01;
-}/*# sourceMappingURL=main.css.map */
+}
+
+#event {
+  background-color: #1f1f1f;
+}/*# sourceMappingURL=event.css.map */
