@@ -31,10 +31,10 @@
       <?php
         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
           // Jika sudah login, tampilkan tombol logout
-          echo '<a class="btn btn-outline ms-md-2" role="button" href="logout.php">Logout</a>';
+          echo '<a class="btn btn-outline ms-md-2 pt-0 pb-1" role="button" href="logout.php">Logout</a>';
         } else {
           // Jika belum login, tampilkan tombol login
-          echo '<a class="btn btn-outline ms-md-2" role="button" href="login.php">Login</a>';
+          echo '<a class="btn btn-outline ms-md-2 pt-0 pb-1" role="button" href="login.php">Login</a>';
         }
       ?>
     </div>

@@ -1,29 +1,22 @@
-<?php
+<?
 	include 'db_connect.php';
-	// Periksa apakah form telah disubmit
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-		// Mendapatkan nilai inputan dari form
 		$no_telp = $_POST['no_telp'];
 		$password = $_POST['password'];
 
-		// Lakukan validasi login, misalnya dengan membandingkan dengan data pengguna di database
-		// ...
 		$sql = "SELECT * FROM akun WHERE no_telp = '$no_telp' AND password = '$password'";
     $result = mysqli_query($conn, $sql);
 
 		if ($result && mysqli_num_rows($result) > 0) {
 			$query = "SELECT nama FROM akun WHERE no_telp = '$no_telp'";
 
-			// Jalankan query
 			$result = $conn->query($query);
 
-			// Periksa apakah query berhasil dieksekusi
 			if ($result->num_rows > 0) {
-					// Ambil data nama dari baris pertama hasil query
-					$row = $result->fetch_assoc();
-					$nama = $row['nama'];
+				$row = $result->fetch_assoc();
+				$nama = $row['nama'];
 			}
-			// Set session jika login berhasil
+			
 			session_start();
 			$_SESSION['logged_in'] = true;
 			$_SESSION['no_telp'] = $no_telp;

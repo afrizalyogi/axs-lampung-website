@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="id">
 	<head>
@@ -19,6 +20,12 @@
 					<div class="col-md-8 col-xl-6 text-center mx-auto">
 						<h2 class="text-uppercase fw-bold">Showcase</h2>
 						<p>Inspirasi Modifikasi Dari Komunitas Kami</p>
+						<?php
+							if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+								// Jika sudah login, tampilkan tombol logout
+								echo '<a class="btn btn-outline btn-lg" role="button" href="create-showcase.php">Tambah Modifikasi</a>';
+							}
+						?>
 					</div>
 				</div>
 				<div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
